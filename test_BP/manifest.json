@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Made by Tadase",
+    "name": "PVP auto switching",
+    "uuid":"4444f761-b421-40c1-9878-616b376931d0",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules":
+    [
+      {
+        "description": "Made by Tadase",
+          "type": "data",
+          "uuid": "48c027c7-9e62-46cd-8218-1e43d631be0a",
+          "version": [1, 0, 0]
+      },
+      {
+        "type": "script",
+        "language": "javascript",
+        "uuid": "84164bdf-8672-4801-be9e-0550432f3b26",
+        "version": [1,0,0],
+        "entry": "scripts/main.js"
+    }
+    ],
+  "dependencies": [
+
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.9.0-beta"
+		}
+ ]
+}
