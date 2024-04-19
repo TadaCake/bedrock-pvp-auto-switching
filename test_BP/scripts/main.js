@@ -168,7 +168,7 @@ world.beforeEvents.chatSend.subscribe((chatSend) => {
 system.runInterval(() => {
     if (!world.getPlayers().length) return;
 
-    if (timerdata['enabled'] && (system.currentTick % 25) === 0) { // every 1 second (25 ticks = 1s)
+    if (timerdata['enabled'] && (system.currentTick % 20) === 0) { // every 1 second (20 ticks = 1s)
         // console.warn(timerdata.currentTime);
         if (timerdata.currentTime <= 0) {
             timerdata.pvpState = !timerdata.pvpState; // switch between True and False;
